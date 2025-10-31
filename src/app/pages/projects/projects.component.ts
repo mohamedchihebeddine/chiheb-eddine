@@ -51,10 +51,10 @@ projects: Project[] = [
       { name: 'Rasa', icon: 'fa-solid fa-robot', color: '#5d5dff' }
     ],
     github: '#',
-    demo: 'assets/consultEase/video-consultEase.mp4',
+    demo: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1761939506/video-consultEase_zfli7l.mp4',
     categories: ['ia', 'web'],
     mediaType: 'video',
-    mediaUrl: 'assets/consultEase/video-consultEase.mp4',
+    mediaUrl: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1761939506/video-consultEase_zfli7l.mp4',
     translationKey: 'medical'
   },
   {

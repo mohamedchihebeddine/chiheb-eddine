@@ -34,10 +34,10 @@ projects: Project[] = [
       { name: 'JavaScript', icon: 'fa-brands fa-js', color: '#f7df1e' }
     ],
     github: '#',
-    demo: 'assets/workWave/video-workWave.mp4',
+    demo: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1761940221/video-workWave_myrrpy.mp4',
     categories: ['web'],
     mediaType: 'video',
-    mediaUrl: 'assets/workWave/video-workWave.mp4',
+    mediaUrl: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1761940221/video-workWave_myrrpy.mp4',
     translationKey: 'workwave'
   },
   {
@@ -65,10 +65,10 @@ projects: Project[] = [
       { name: 'Python', icon: 'fa-brands fa-python', color: '#3776ab' }
     ],
     github: '#',
-    demo: 'assets/jeux xo/jeu XO.mp4',
+    demo: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1761939824/magazin_eniso_yffpdx.mp4',
     categories: ['python'],
     mediaType: 'video',
-    mediaUrl: 'assets/jeux xo/jeu XO.mp4',
+    mediaUrl: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1761939824/magazin_eniso_yffpdx.mp4',
     translationKey: 'tictactoe'
   },
   {
@@ -82,10 +82,10 @@ projects: Project[] = [
       { name: 'JavaScript', icon: 'fa-brands fa-js', color: '#f7df1e' }
     ],
     github: '#',
-    demo: 'assets/Eniso-Team/magazin_eniso.mp4',
+    demo: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1761940331/jeu_XO_qvufmy.mp4',
     categories: ['frontend'],
     mediaType: 'video',
-    mediaUrl: 'assets/Eniso-Team/magazin_eniso.mp4',
+    mediaUrl: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1761940331/jeu_XO_qvufmy.mp4',
     translationKey: 'eniso'
   },
   {

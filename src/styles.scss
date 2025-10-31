@@ -258,7 +258,7 @@ p {
 
 /* Specific styling for About page title */
 .about-main .section-title {
-  color: #000000;
-  -webkit-text-fill-color: #000000;
+  color: var(--primary-color);
+  -webkit-text-fill-color: var(--primary-color);
   background: none;
 }

@@ -17,7 +17,7 @@ export class HomeComponent {
   heroMsg =
     "Je suis Chiheb Eddine Benammar, Étudiant en 3ᵉ année cycle ingénieur – Génie Logiciel passionné par l’IA et les technologies modernes.";
   profileImg = "/assets/photo-profile.jpeg";
-  cvUrl = "/assets/chiheb-eddine-benamar-5emeGL-IA.pdf";
+  cvUrl = "assets/chiheb-eddine-benamar-5emeGL-IA.pdf";
   clients: ClientLogo[] = [
     { name: "Satoripop", url: "#", img: "assets/img/client-satoripop.png" },
     { name: "Avionav", url: "#", img: "assets/img/client-avionav.png" },

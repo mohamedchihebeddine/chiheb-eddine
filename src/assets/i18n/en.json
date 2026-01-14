@@ -12,8 +12,8 @@
   "home": {
     "welcome": "Welcome to my portfolio",
     "heroMsg": "I'm Chiheb Eddine Benammar",
-    "heroSubMSg":"A 3rd year Software Engineering student",
-    "heroDescription":"Based in Sousse-Tunisia Passionate about AI and modern technologies.",
+    "heroSubMSg": "A 3rd year Software Engineering student",
+    "heroDescription": "Based in Sousse-Tunisia Passionate about AI and modern technologies.",
     "viewProjects": "View my projects",
     "downloadCV": "Download CV"
   },
@@ -107,10 +107,6 @@
         "title": "Medical Appointment Chatbot",
         "description": "Medical pre-diagnosis system with AI chatbot (Rasa) and appointment booking."
       },
-      "tictactoe": {
-        "title": "Tic-Tac-Toe Game",
-        "description": "Interactive game coded in Python, score management, simple interface."
-      },
       "eniso": {
         "title": "Site ENISO",
         "description": "Showcase website for ENISO, presenting activities and clubs."
@@ -122,6 +118,14 @@
       "aircraft": {
         "title": "Speed Interface for Aircraft",
         "description": "High-performance interface for avionics systems."
+      },
+      "appmobile": {
+        "title": "Medical Mobile Application",
+        "description": "Android mobile application for medical consultations developed with Kotlin."
+      },
+      "ecommerce": {
+        "title": "Casaques E-Commerce Mobile App",
+        "description": "Mobile e-commerce application for selling traditional casaques (Tunisian clothing) developed with Flutter. Offers a smooth user experience for browsing collections, searching products, and making purchases. Integrated with Firebase for user authentication and product data management."
       },
       "viewDemo": "View Demo"
     }

@@ -14,7 +14,6 @@
     "heroMsg": "Je suis Chiheb Eddine Benammar",
     "heroSubMSg": "Étudiant en 3ᵉ année cycle ingénieur – Génie Logiciel",
     "heroDescription": " basé à Sousse-Tunisie passionné par l'IA et les technologies modernes.",
-
     "viewProjects": "Voir mes projets",
     "downloadCV": "Télécharger CV"
   },
@@ -76,10 +75,6 @@
         "title": "Chatbot de Rendez-vous Médicaux",
         "description": "Système de pré-diagnostic médical avec chatbot IA (Rasa) et prise de rendez-vous."
       },
-      "tictactoe": {
-        "title": "Jeu de Morpion",
-        "description": "Jeu interactif codé en Python, gestion des scores, interface simple."
-      },
       "eniso": {
         "title": "Site ENISO",
         "description": "Site vitrine pour l'ENISO, présentant les activités et les clubs."
@@ -91,6 +86,14 @@
       "aircraft": {
         "title": "Interface de Vitesse pour Avion",
         "description": "Interface haute performance pour systèmes avioniques."
+      },
+      "appmobile": {
+        "title": "Application Mobile Médicale",
+        "description": "Application mobile Android pour consultations médicales développée avec Kotlin."
+      },
+      "ecommerce": {
+        "title": "Application Mobile E-Commerce Casaques",
+        "description": "Application mobile d'e-commerce pour la vente de casaques traditionnelles (vêtements tunisiens) développée avec Flutter. Offre une expérience utilisateur fluide pour parcourir les collections, rechercher des produits et effectuer des achats. Intégrée avec Firebase pour la gestion de l'authentification utilisateur et du stockage des données produits."
       },
       "viewDemo": "Voir la Démo"
     }

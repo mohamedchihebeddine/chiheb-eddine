@@ -129,8 +129,8 @@
       },
       "smart-ecommerce": {
         "title": "Intelligent E-commerce Platform with AI(chatbot and a virtual clothing try-on system )",
-        "description": "Design and development of a complete e-commerce platform integrating a multilingual AI chatbot managing the entire website workflow and a virtual clothing try-on system (VITON-HD, OpenPose, PyTorch). Implementation of a microservices architecture (Spring Boot, Flask, Angular) with secure REST API (JWT), product catalog management, cart, orders and payments (PayPal, Stripe, Orange Money). Development of a responsive and modern interface (Angular 17, TypeScript, SCSS)."
-      },
+        "description": "E-commerce platform integrating a multilingual AI chatbot to manage the entire website workflow and a virtual clothing try-on system, with integration of external payment APIs (PayPal, Stripe, Orange Money)."
+      
       },
       "viewDemo": "View Demo"
     }

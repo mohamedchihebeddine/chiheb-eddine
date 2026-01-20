@@ -24,21 +24,21 @@ export class ProjectsComponent implements OnInit {
   projects: Project[] = [
     {
       title: '',
-      image: 'assets/workWave/logo.png',
+      image: 'https://res.cloudinary.com/dpr5kmxrf/image/upload/v1768904977/Capture_d_%C3%A9cran_2025-11-13_163713_xuolm1.png',
       description: '',
       stack: [
-        { name: 'PHP', icon: 'fa-brands fa-php', color: '#777bb4' },
-        { name: 'MySQL', icon: 'fa-solid fa-database', color: '#4479a1' },
-        { name: 'HTML5', icon: 'fa-brands fa-html5', color: '#e44d26' },
-        { name: 'CSS3', icon: 'fa-brands fa-css3-alt', color: '#1572b6' },
-        { name: 'JavaScript', icon: 'fa-brands fa-js', color: '#f7df1e' }
+        { name: 'Angular', icon: 'fa-brands fa-angular', color: '#dd0031' },
+        { name: 'Spring Boot', icon: 'fa-solid fa-leaf', color: '#6db33f' },
+        { name: 'PyTorch', icon: 'fa-solid fa-brain', color: '#ee4c2c' },
+        { name: 'TypeScript', icon: 'fa-solid fa-code', color: '#3178c6' },
+        { name: 'Rasa', icon: 'fa-solid fa-robot', color: '#5d5dff' }
       ],
       github: '#',
-      demo: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1761940221/video-workWave_myrrpy.mp4',
-      categories: ['fullstack'],
-      mediaType: 'video',
-      mediaUrl: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1761940221/video-workWave_myrrpy.mp4',
-      translationKey: 'workwave'
+      demo: '#',
+      categories: ['fullstack', 'ia'],
+      mediaType: 'image',
+      mediaUrl: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1768906676/demo-stage-d_ete_vp6wzy.mp4',
+      translationKey: 'smart-ecommerce'
     },
     {
       title: '',
@@ -56,6 +56,24 @@ export class ProjectsComponent implements OnInit {
       mediaType: 'video',
       mediaUrl: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1761939506/video-consultEase_zfli7l.mp4',
       translationKey: 'medical'
+    },
+    {
+      title: '',
+      image: 'assets/workWave/logo.png',
+      description: '',
+      stack: [
+        { name: 'PHP', icon: 'fa-brands fa-php', color: '#777bb4' },
+        { name: 'MySQL', icon: 'fa-solid fa-database', color: '#4479a1' },
+        { name: 'HTML5', icon: 'fa-brands fa-html5', color: '#e44d26' },
+        { name: 'CSS3', icon: 'fa-brands fa-css3-alt', color: '#1572b6' },
+        { name: 'JavaScript', icon: 'fa-brands fa-js', color: '#f7df1e' }
+      ],
+      github: '#',
+      demo: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1761940221/video-workWave_myrrpy.mp4',
+      categories: ['fullstack'],
+      mediaType: 'video',
+      mediaUrl: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1761940221/video-workWave_myrrpy.mp4',
+      translationKey: 'workwave'
     },
     {
       title: '',
@@ -138,24 +156,7 @@ export class ProjectsComponent implements OnInit {
       mediaUrl: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1768352756/WhatsApp_Video_2026-01-11_at_11.31.08_PM_kfivaj.mp4',
       translationKey: 'ecommerce'
     },
-    {
-      title: '',
-      image: 'https://res.cloudinary.com/dpr5kmxrf/image/upload/v1768904977/Capture_d_%C3%A9cran_2025-11-13_163713_xuolm1.png',
-      description: '',
-      stack: [
-        { name: 'Angular', icon: 'fa-brands fa-angular', color: '#dd0031' },
-        { name: 'Spring Boot', icon: 'fa-solid fa-leaf', color: '#6db33f' },
-        { name: 'PyTorch', icon: 'fa-solid fa-brain', color: '#ee4c2c' },
-        { name: 'TypeScript', icon: 'fa-solid fa-code', color: '#3178c6' },
-        { name: 'Rasa', icon: 'fa-solid fa-robot', color: '#5d5dff' }
-      ],
-      github: '#',
-      demo: '#',
-      categories: ['fullstack', 'ia'],
-      mediaType: 'image',
-      mediaUrl: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1768906676/demo-stage-d_ete_vp6wzy.mp4',
-      translationKey: 'smart-ecommerce'
-    }
+    
   ];
 
   selectedProject: Project | null = null;

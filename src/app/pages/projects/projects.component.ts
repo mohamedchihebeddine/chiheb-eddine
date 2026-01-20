@@ -35,7 +35,7 @@ export class ProjectsComponent implements OnInit {
       ],
       github: '#',
       demo: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1761940221/video-workWave_myrrpy.mp4',
-      categories: ['web'],
+      categories: ['fullstack'],
       mediaType: 'video',
       mediaUrl: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1761940221/video-workWave_myrrpy.mp4',
       translationKey: 'workwave'
@@ -52,7 +52,7 @@ export class ProjectsComponent implements OnInit {
       ],
       github: '#',
       demo: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1761939506/video-consultEase_zfli7l.mp4',
-      categories: ['ia', 'web'],
+      categories: ['ia', 'fullstack'],
       mediaType: 'video',
       mediaUrl: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1761939506/video-consultEase_zfli7l.mp4',
       translationKey: 'medical'
@@ -86,7 +86,7 @@ export class ProjectsComponent implements OnInit {
       ],
       github: '#',
       demo: '#',
-      categories: ['data', 'python'],
+      categories: ['data'],
       mediaType: 'image',
       mediaUrl: 'assets/analyse/photo-analyse.png',
       translationKey: 'data'
@@ -137,6 +137,24 @@ export class ProjectsComponent implements OnInit {
       mediaType: 'video',
       mediaUrl: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1768352756/WhatsApp_Video_2026-01-11_at_11.31.08_PM_kfivaj.mp4',
       translationKey: 'ecommerce'
+    },
+    {
+      title: '',
+      image: 'https://res.cloudinary.com/dpr5kmxrf/image/upload/v1768904977/Capture_d_%C3%A9cran_2025-11-13_163713_xuolm1.png',
+      description: '',
+      stack: [
+        { name: 'Angular', icon: 'fa-brands fa-angular', color: '#dd0031' },
+        { name: 'Spring Boot', icon: 'fa-solid fa-leaf', color: '#6db33f' },
+        { name: 'PyTorch', icon: 'fa-solid fa-brain', color: '#ee4c2c' },
+        { name: 'TypeScript', icon: 'fa-solid fa-code', color: '#3178c6' },
+        { name: 'Rasa', icon: 'fa-solid fa-robot', color: '#5d5dff' }
+      ],
+      github: '#',
+      demo: '#',
+      categories: ['fullstack', 'ia'],
+      mediaType: 'image',
+      mediaUrl: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1768906676/demo-stage-d_ete_vp6wzy.mp4',
+      translationKey: 'smart-ecommerce'
     }
   ];
 
@@ -169,13 +187,13 @@ export class ProjectsComponent implements OnInit {
   getCategoryIcon(category: string): string {
     const icons: { [key: string]: string } = {
       'all': 'fa-solid fa-layer-group',
-      'web': 'fa-solid fa-globe',
+      'fullstack': 'fa-solid fa-server',
       'ia': 'fa-solid fa-brain',
-      'python': 'fa-brands fa-python',
       'frontend': 'fa-solid fa-code',
       'data': 'fa-solid fa-chart-line',
       'embedded': 'fa-solid fa-microchip',
-      'mobile': 'fa-solid fa-mobile'
+      'mobile': 'fa-solid fa-mobile',
+     
     };
     return icons[category] || 'fa-solid fa-folder';
   }

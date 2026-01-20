@@ -127,6 +127,11 @@
         "title": "Casaques E-Commerce Mobile App",
         "description": "Mobile e-commerce application for selling traditional casaques (Tunisian clothing) developed with Flutter. Offers a smooth user experience for browsing collections, searching products, and making purchases. Integrated with Firebase for user authentication and product data management."
       },
+      "smart-ecommerce": {
+        "title": "Intelligent E-commerce Platform with AI(chatbot and a virtual clothing try-on system )",
+        "description": "Design and development of a complete e-commerce platform integrating a multilingual AI chatbot managing the entire website workflow and a virtual clothing try-on system (VITON-HD, OpenPose, PyTorch). Implementation of a microservices architecture (Spring Boot, Flask, Angular) with secure REST API (JWT), product catalog management, cart, orders and payments (PayPal, Stripe, Orange Money). Development of a responsive and modern interface (Angular 17, TypeScript, SCSS)."
+      },
+      },
       "viewDemo": "View Demo"
     }
   },

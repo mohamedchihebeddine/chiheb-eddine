@@ -13,14 +13,16 @@
   }
 
   &__category {
-    background: var(--card-bg);
+    background: var(--background-primary);
     padding: 1.5rem;
     border-radius: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
     transition: transform 0.3s ease;
+    border: 1px solid var(--border-color);
 
     &:hover {
       transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
     }
   }
 
@@ -38,24 +40,26 @@
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  background: var(--bg-color);
+  background: var(--background-secondary);
   border-radius: 0.5rem;
   transition: transform 0.3s ease;
   cursor: pointer;
+  border: 1px solid var(--border-color);
 
   &:hover {
     transform: scale(1.05);
+    background: var(--background-tertiary);
   }
 
   &__icon {
     font-size: 2rem;
     margin-bottom: 0.5rem;
-    color: var(--skill-color, var(--primary-color));
+    color: var(--accent-color);
   }
 
   &__name {
     font-size: 0.9rem;
-    color: var(--text-color);
+    color: var(--text-primary);
   }
 }
 

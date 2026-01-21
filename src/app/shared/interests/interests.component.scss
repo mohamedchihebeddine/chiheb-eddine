@@ -15,20 +15,21 @@
   flex: 0 0 240px;
   width: 240px;
   max-width: 260px;
-  background: #f5f7fa;
+  background: var(--background-secondary);
   border-radius: 1rem;
-  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  box-shadow: var(--shadow);
   padding: 1.2rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: transform 0.3s, background 0.3s;
   cursor: pointer;
+  border: 1px solid var(--border-color);
 }
 
 .interest-card__icon {
   font-size: 2.2rem;
-  color: #1976d2;
+  color: var(--accent-color);
   margin-bottom: 0.7rem;
   transition: color 0.2s;
 }
@@ -36,22 +37,22 @@
 .interest-card__name {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #1976d2;
+  color: var(--accent-color);
   margin-bottom: 0.3rem;
 }
 
 .interest-card__desc {
   font-size: 0.98rem;
-  color: #444;
+  color: var(--text-secondary);
 }
 
 .interest-card:hover {
   transform: scale(1.07);
-  background: #e3eafc;
+  background: var(--background-tertiary);
 }
 
 .interest-card:hover .interest-card__icon {
-  color: #43b7ba;
+  color: var(--accent-hover);
 }
 
 @media (max-width: 1024px) {

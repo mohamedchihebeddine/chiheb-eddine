@@ -17,6 +17,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'website-de-cv-chiheb-2emeannee';
+  
 
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];

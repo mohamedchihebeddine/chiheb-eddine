@@ -34,10 +34,11 @@ export class ProjectsComponent implements OnInit {
         { name: 'Rasa', icon: 'fa-solid fa-robot', color: '#5d5dff' }
       ],
       github: '#',
-      demo: '#',
+      demo: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1769413868/demo-stage-d_ete_1_mmvvop.mp4',
       categories: ['fullstack', 'ia'],
-      mediaType: 'image',
-      mediaUrl: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1768906676/demo-stage-d_ete_vp6wzy.mp4',
+      mediaType: 'video',
+      mediaUrl: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1769413868/demo-stage-d_ete_1_mmvvop.mp4',
+      
       translationKey: 'smart-ecommerce'
     },
     {
@@ -55,6 +56,7 @@ export class ProjectsComponent implements OnInit {
       categories: ['ia', 'fullstack'],
       mediaType: 'video',
       mediaUrl: 'https://res.cloudinary.com/dpr5kmxrf/video/upload/v1761939506/video-consultEase_zfli7l.mp4',
+      
       translationKey: 'medical'
     },
     {

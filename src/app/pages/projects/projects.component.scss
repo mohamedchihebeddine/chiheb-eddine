@@ -178,11 +178,11 @@
     }
 
     &--demo {
-      background: #1976d2;
+      background: var(--accent-color);
       color: white;
 
       &:hover {
-        background: darken(#1976d2, 10%);
+        background: var(--accent-hover);
       }
     }
 

@@ -11,7 +11,7 @@
     <div class="home-hero__actions">
       <a href="#projects" class="home-hero__btn home-hero__btn--primary" (click)="scrollToProjects($event)">{{
         'home.viewProjects' | translate }}</a>
-      <a [href]="cvUrl" target="_blank" class="home-hero__btn home-hero__btn--secondary">{{ 'home.downloadCV' |
+      <a [href]="cvUrl" target="_blank" rel="noopener noreferrer" download class="home-hero__btn home-hero__btn--secondary">{{ 'home.downloadCV' |
         translate }}</a>
     </div>
   </div>

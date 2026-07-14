@@ -12,15 +12,15 @@
   "home": {
     "welcome": "Welcome to my portfolio",
     "heroMsg": "I'm Chiheb Eddine Benammar",
-    "heroSubMSg": "A 3rd year Software Engineering student",
-    "heroDescription": "Based in Sousse-Tunisia Passionate about AI and modern technologies.",
+    "heroSubMSg": "Computer Engineer – Software Engineering",
+    "heroDescription": "Based in Sousse, Tunisia, passionate about AI and modern technologies.",
     "viewProjects": "View my projects",
     "downloadCV": "Download CV"
   },
   "about": {
     "title": "About Me",
-    "description1": "3rd year Software Engineering student at EPI Digital School, I am passionate about application development and artificial intelligence technologies. My journey has allowed me to acquire solid mastery of Full Stack environments (Angular, Spring Boot, React, Node.js) as well as AI and data science tools (Python, Rasa, PyTorch, Pandas).",
-    "description2": "Curious, rigorous, and creative, I enjoy taking on technical challenges and working on innovative projects combining web, mobile development, and artificial intelligence. My goal is to design efficient and useful solutions while continuing to evolve in a stimulating and collaborative environment."
+    "description1": "As a computer engineer specialized in software engineering at EPI Digital School, I am passionate about application development and artificial intelligence. My background has allowed me to build a strong command of full-stack environments (Angular, Spring Boot, React, Node.js) as well as AI and data science tools (Python, RAG, LLM, PyTorch, Pandas), and quality coverage through automated testing (Cucumber, Selenium, Appium).",
+    "description2": "Curious, thorough, and creative, I enjoy taking on technical challenges and working on innovative projects that combine web development, mobile development, and artificial intelligence. My goal is to design efficient, useful solutions while continuing to grow in a stimulating and collaborative environment."
   },
   "sections": {
     "education": "Education",
@@ -32,38 +32,12 @@
     "internships": "Internships"
   },
   "education": {
-    "epi2": {
+    "epi3": {
       "school": "EPI School of Engineering Sousse",
-      "degree": "2nd Year – Engineering Cycle",
-      "period": "2024 – 2025",
+      "degree": "3rd Year – Engineering Cycle",
+      "period": "2025 – 2026",
       "specialty": "Software Engineering"
     },
-    "epi1": {
-      "school": "EPI School of Engineering Sousse",
-      "degree": "1st Year – Engineering Cycle",
-      "period": "2023 – 2024",
-      "specialty": "Focus on advanced programming, software engineering, and system architecture"
-    },
-    "ipeim": {
-      "school": "IPEIM Monastir",
-      "degree": "2nd Year – Preparatory Cycle",
-      "period": "2022 – 2023",
-      "specialty": "Mathematics, physics, and computer science fundamentals"
-    },
-    "ipein": {
-      "school": "IPEIN Nabeul",
-      "degree": "1st Year – Preparatory Cycle",
-      "period": "2021 – 2022",
-      "specialty": "Mathematics, physics, and computer science fundamentals"
-    },
-    "bac": {
-      "school": "Lycée Hached, M'saken Sousse",
-      "degree": "Baccalaureate in Experimental Sciences",
-      "period": "2020 – 2021",
-      "specialty": "Experimental Sciences"
-    }
-  },
-  "education": {
     "epi2": {
       "school": "EPI School of Engineering Sousse",
       "degree": "2nd Year – Engineering Cycle",
@@ -99,6 +73,10 @@
     "title": "My Projects",
     "subtitle": "Discover my achievements and development experiences",
     "items": {
+      "telecare": {
+        "title": "EITA TeleCare – Intelligent Telemedicine Platform",
+        "description": "Intelligent telemedicine platform featuring a clinical AI chatbot based on RAG (Ollama, Qdrant), a medical OCR module (Tesseract), a Spring Boot microservices architecture (Eureka, API Gateway, Keycloak/JWT, PostgreSQL, Redis, Kafka), multi-channel interfaces (React, Flutter) with WebRTC video conferencing and real-time WebSocket/STOMP messaging, plus automated testing (Cucumber, Selenium, Appium)."
+      },
       "workwave": {
         "title": "WorkWave Platform",
         "description": "Web platform for freelancers and companies (matching, project management, profiles)."
@@ -161,5 +139,31 @@
     "backendDesc": "Creating secure REST APIs and microservice architectures.",
     "aiDev": "Artificial Intelligence & Data",
     "aiDesc": "Developing intelligent solutions and data analysis."
+  },
+  "internships": {
+    "pfe": {
+      "company": "EITA INNOV",
+      "period": "02/2026 – 06/2026",
+      "role": "Final-Year Internship (PFE) – Full Stack & AI",
+      "description": "Design and development of an intelligent telemedicine platform (EITA TeleCare) featuring a clinical AI chatbot based on RAG (Ollama, Qdrant) to support patients and healthcare professionals, as well as a medical OCR module (Tesseract) to extract text from clinical PDFs and images and enrich medical records. Implementation of a Spring Boot microservices architecture (Eureka, API Gateway) with a secured REST API (Keycloak / JWT), dedicated PostgreSQL databases, Redis cache and locks, and asynchronous communication via Apache Kafka. Development of multi-channel interfaces: web application (React, Tailwind, i18n), admin back-office (React / Vite), and patient mobile app (Flutter), with WebRTC video conferencing and real-time messaging via WebSocket / STOMP. Quality coverage ensured through unit tests and automated tests (Cucumber, Selenium, Appium)."
+    },
+    "satoripop2025": {
+      "company": "Satoripop, Sousse",
+      "period": "07/2025 – 08/2025",
+      "role": "Full Stack Intern – AI & E-commerce",
+      "description": "Design and development of an intelligent e-commerce platform integrating a multilingual AI chatbot managing the full site workflow and a virtual try-on system (VITON-HD, OpenPose, PyTorch). Implementation of a microservices architecture (Spring Boot, Flask, Angular) with a secured REST API (JWT), product catalog, cart, orders, and payments management (PayPal, Stripe, Orange Money). Development of a modern and responsive interface (Angular 17, TypeScript, SCSS)."
+    },
+    "satoripop2024": {
+      "company": "Satoripop, Sousse",
+      "period": "07/2024 – 08/2024",
+      "role": "Full Stack Intern – Medical Emergencies",
+      "description": "Development of a full-stack web application for medical emergency services management, including call coordination, mission tracking, and medical staff management. Microservices architecture with Spring Boot, JHipster, and Angular. Integration of Google Maps for geolocation and access security via JWT. Development of a responsive multilingual interface and setup of automated tests with Docker."
+    },
+    "avionav": {
+      "company": "Avionav, Sousse",
+      "period": "09/2023 – 09/2023",
+      "role": "Qt Developer Intern – Flight Interface",
+      "description": "“SMART COCKPIT” project: design of an embedded system for light aircraft modernizing the cockpit through a touchscreen centralizing airspeed, altitude, and artificial horizon. Development of a real-time airspeed interface with Qt/QML on Raspberry Pi 4B, and sensor integration (BMP280) via Python (PyQt5/PySide)."
+    }
   }
 }

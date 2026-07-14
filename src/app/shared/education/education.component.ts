@@ -25,6 +25,15 @@ export class EducationComponent implements OnInit {
       specialty: '',
       icon: 'fa-solid fa-graduation-cap',
       badge: 'fa-solid fa-certificate',
+      key: 'epi3'
+    },
+    {
+      school: '',
+      degree: '',
+      period: '',
+      specialty: '',
+      icon: 'fa-solid fa-graduation-cap',
+      badge: 'fa-solid fa-certificate',
       key: 'epi2'
     },
     {

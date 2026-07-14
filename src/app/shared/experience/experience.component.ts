@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 export interface Experience {
   company: string;
@@ -15,6 +16,7 @@ export interface Experience {
   demo?: string;
   mediaType?: 'image' | 'video';
   mediaUrl?: string;
+  key?: string;
 }
 
 @Component({
@@ -29,18 +31,31 @@ export class ExperienceComponent implements OnInit {
 
   selectedExperience: Experience | null = null;
 
-   experiences: Experience[] = [
+  experiences: Experience[] = [
     {
-      company: 'Satoripop, Sousse',
-      period: '07/2025 – 08/2025',
-      role: 'Stagiaire Full Stack – IA & E-commerce',
-      description: `
-      Conception et développement d’une plateforme e-commerce intelligente intégrant un chatbot IA multilingue 
-      gérant le workflow complet du site et un système d’essayage virtuel (VITON-HD, OpenPose, PyTorch).
-      Mise en place d’une architecture microservices (Spring Boot, Flask, Angular) avec API REST sécurisée (JWT),
-      gestion du catalogue produits, panier, commandes et paiements (PayPal, Stripe, Orange Money).
-      Développement d’une interface moderne et responsive (Angular 17, TypeScript, SCSS).
-      `,
+      company: '',
+      period: '',
+      role: '',
+      description: '',
+      stack: [
+        { name: 'Spring Boot', icon: 'fa-solid fa-leaf', color: '#6db33f' },
+        { name: 'React', icon: 'fa-brands fa-react', color: '#61dafb' },
+        { name: 'Flutter', icon: 'fa-solid fa-mobile-screen', color: '#02569b' },
+        { name: 'Ollama', icon: 'fa-solid fa-robot', color: '#000000' },
+        { name: 'Kafka', icon: 'fa-solid fa-stream', color: '#231f20' },
+        { name: 'PostgreSQL', icon: 'fa-solid fa-database', color: '#336791' },
+        { name: 'Keycloak', icon: 'fa-solid fa-shield-halved', color: '#4d4d4d' },
+        { name: 'Redis', icon: 'fa-solid fa-bolt', color: '#dc382d' }
+      ],
+      image: '/assets/exp-eitainnov.png',
+      type: 'stage',
+      key: 'pfe'
+    },
+    {
+      company: '',
+      period: '',
+      role: '',
+      description: '',
       stack: [
         { name: 'Angular', icon: 'fa-brands fa-angular', color: '#dd0031' },
         { name: 'Spring Boot', icon: 'fa-solid fa-leaf', color: '#6db33f' },
@@ -49,19 +64,14 @@ export class ExperienceComponent implements OnInit {
         { name: 'PyTorch', icon: 'fa-solid fa-fire', color: '#ee4c2c' }
       ],
       image: '/assets/exp-satoripop.png',
-      type: 'stage'
+      type: 'stage',
+      key: 'satoripop2025'
     },
     {
-      company: 'Satoripop, Sousse',
-      period: '07/2024 – 08/2024',
-      role: 'Stagiaire Full Stack – Urgences Médicales',
-      description: `
-      Développement d’une application web full-stack pour la gestion des services d’urgence médicale, 
-      incluant la coordination des appels, le suivi des missions et la gestion du personnel médical.
-      Architecture microservices avec Spring Boot, JHipster et Angular.
-      Intégration de Google Maps pour la géolocalisation et sécurisation des accès via JWT.
-      Développement d’une interface multi-langues responsive et mise en place de tests automatisés via Docker.
-      `,
+      company: '',
+      period: '',
+      role: '',
+      description: '',
       stack: [
         { name: 'Angular', icon: 'fa-brands fa-angular', color: '#dd0031' },
         { name: 'Spring Boot', icon: 'fa-solid fa-leaf', color: '#6db33f' },
@@ -70,18 +80,14 @@ export class ExperienceComponent implements OnInit {
         { name: 'Docker', icon: 'fa-brands fa-docker', color: '#2496ed' }
       ],
       image: '/assets/exp-satoripop.png',
-      type: 'stage'
+      type: 'stage',
+      key: 'satoripop2024'
     },
     {
-      company: 'Avionav, Sousse',
-      period: '09/2023 – 09/2023',
-      role: 'Stagiaire Développeur Qt – Interface de vol',
-      description: `
-      Projet “SMART COCKPIT” : conception d’un système embarqué pour avions légers modernisant 
-      le poste de pilotage via un écran tactile centralisant vitesse, altitude et horizon artificiel.
-      Développement de l’interface de vitesse en temps réel avec Qt/QML sur Raspberry Pi 4B,
-      intégration de capteurs (BMP280) via Python (PyQt5/PySide).
-      `,
+      company: '',
+      period: '',
+      role: '',
+      description: '',
       stack: [
         { name: 'Qt', icon: 'fa-solid fa-cube', color: '#41cd52' },
         { name: 'C++', icon: 'fa-solid fa-code', color: '#00599c' },
@@ -89,9 +95,10 @@ export class ExperienceComponent implements OnInit {
         { name: 'Raspberry Pi', icon: 'fa-solid fa-microchip', color: '#d71a28' }
       ],
       image: '/assets/exp-avionav.png',
-      type: 'stage'
+      type: 'stage',
+      key: 'avionav'
     },
-     {
+    {
       company: 'Plateforme WorkWave ',
       period: '2024',
       role: 'Développeur Full Stack',
@@ -114,10 +121,10 @@ export class ExperienceComponent implements OnInit {
       mediaUrl: '/assets/workWave/video-workWave.mp4'
     },
     {
-  company: 'Projet de Fin d’Année – Plateforme Médicale Intelligente',
-  period: '2025',
-  role: 'Développeur IA Chatbot',
-  description: `
+      company: 'Projet de Fin d’Année – Plateforme Médicale Intelligente',
+      period: '2025',
+      role: 'Développeur IA Chatbot',
+      description: `
   Développement d’une plateforme web innovante de prise de rendez-vous médicaux intégrant 
   un chatbot IA de pré-diagnostic basé sur Rasa et spaCy, capable d’analyser les symptômes 
   des patients et de recommander automatiquement la spécialité médicale appropriée.
@@ -128,20 +135,20 @@ export class ExperienceComponent implements OnInit {
   Création d’une interface moderne et responsive (React.js, Tailwind CSS, Material-UI), 
   avec authentification sécurisée (JWT) et tableau de bord analytique.
   `,
-  stack: [
-    { name: 'React', icon: 'fa-brands fa-react', color: '#61dafb' },
-    { name: 'Node.js', icon: 'fa-brands fa-node', color: '#3c873a' },
-    { name: 'Express.js', icon: 'fa-solid fa-server', color: '#303030' },
-    { name: 'Python', icon: 'fa-brands fa-python', color: '#3776ab' },
-    { name: 'Rasa', icon: 'fa-solid fa-robot', color: '#5d5dff' },
-    { name: 'Tailwind CSS', icon: 'fa-solid fa-wind', color: '#38bdf8' },
-    { name: 'Material-UI', icon: 'fa-solid fa-layer-group', color: '#0081cb' }
-  ],
-  image: '/assets/consultEase/consultEase-home.png',
-  type: 'project',
-  mediaType: 'video',
-  mediaUrl: '/assets/consultEase/video-consultEase.mp4'
-},
+      stack: [
+        { name: 'React', icon: 'fa-brands fa-react', color: '#61dafb' },
+        { name: 'Node.js', icon: 'fa-brands fa-node', color: '#3c873a' },
+        { name: 'Express.js', icon: 'fa-solid fa-server', color: '#303030' },
+        { name: 'Python', icon: 'fa-brands fa-python', color: '#3776ab' },
+        { name: 'Rasa', icon: 'fa-solid fa-robot', color: '#5d5dff' },
+        { name: 'Tailwind CSS', icon: 'fa-solid fa-wind', color: '#38bdf8' },
+        { name: 'Material-UI', icon: 'fa-solid fa-layer-group', color: '#0081cb' }
+      ],
+      image: '/assets/consultEase/consultEase-home.png',
+      type: 'project',
+      mediaType: 'video',
+      mediaUrl: '/assets/consultEase/video-consultEase.mp4'
+    },
     {
       company: 'Jeu Tic-Tac-Toe',
       period: '2024',
@@ -219,9 +226,32 @@ export class ExperienceComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(private translate: TranslateService) {}
 
   ngOnInit(): void {
+    this.translate.onLangChange.subscribe(() => {
+      this.updateInternshipInfo();
+    });
+    this.updateInternshipInfo();
+  }
+
+  private updateInternshipInfo(): void {
+    this.experiences
+      .filter(exp => exp.type === 'stage' && exp.key)
+      .forEach(exp => {
+        this.translate.get(`internships.${exp.key}.company`).subscribe((res: string) => {
+          exp.company = res;
+        });
+        this.translate.get(`internships.${exp.key}.period`).subscribe((res: string) => {
+          exp.period = res;
+        });
+        this.translate.get(`internships.${exp.key}.role`).subscribe((res: string) => {
+          exp.role = res;
+        });
+        this.translate.get(`internships.${exp.key}.description`).subscribe((res: string) => {
+          exp.description = res;
+        });
+      });
   }
 
   get filteredExperiences(): Experience[] {

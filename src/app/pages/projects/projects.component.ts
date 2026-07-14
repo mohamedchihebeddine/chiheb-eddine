@@ -24,6 +24,26 @@ export class ProjectsComponent implements OnInit {
   projects: Project[] = [
     {
       title: '',
+      image: 'assets/interface-projeteita.png',
+      description: '',
+      stack: [
+        { name: 'Spring Boot', icon: 'fa-solid fa-leaf', color: '#6db33f' },
+        { name: 'React', icon: 'fa-brands fa-react', color: '#61dafb' },
+        { name: 'Flutter', icon: 'fa-solid fa-mobile-screen', color: '#02569b' },
+        { name: 'Ollama', icon: 'fa-solid fa-robot', color: '#000000' },
+        { name: 'Kafka', icon: 'fa-solid fa-stream', color: '#231f20' },
+        { name: 'PostgreSQL', icon: 'fa-solid fa-database', color: '#336791' },
+        { name: 'Keycloak', icon: 'fa-solid fa-shield-halved', color: '#4d4d4d' },
+        { name: 'Redis', icon: 'fa-solid fa-bolt', color: '#dc382d' }
+      ],
+      github: '#',
+      categories: ['fullstack', 'ia', 'mobile'],
+      mediaType: 'image',
+      mediaUrl: 'assets/consultEase/consultEase-home.png',
+      translationKey: 'telecare'
+    },
+    {
+      title: '',
       image: 'https://res.cloudinary.com/dpr5kmxrf/image/upload/v1768904977/Capture_d_%C3%A9cran_2025-11-13_163713_xuolm1.png',
       description: '',
       stack: [

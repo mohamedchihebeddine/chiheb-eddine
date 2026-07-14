@@ -12,14 +12,14 @@
   "home": {
     "welcome": "Bienvenue sur mon portfolio",
     "heroMsg": "Je suis Chiheb Eddine Benammar",
-    "heroSubMSg": "Étudiant en 3ᵉ année cycle ingénieur – Génie Logiciel",
-    "heroDescription": " basé à Sousse-Tunisie passionné par l'IA et les technologies modernes.",
+    "heroSubMSg": "Ingénieur en informatique – Génie Logiciel",
+    "heroDescription": " basé à Sousse, Tunisie, passionné par l'IA et les technologies modernes.",
     "viewProjects": "Voir mes projets",
     "downloadCV": "Télécharger CV"
   },
   "about": {
     "title": "À propos de moi",
-    "description1": "Étudiant en 3ᵉ année du cycle ingénieur en Génie Logiciel à EPI Digital School, je suis passionné par le développement applicatif et les technologies de l'intelligence artificielle. Mon parcours m'a permis d'acquérir une solide maîtrise des environnements Full Stack (Angular, Spring Boot, React, Node.js) ainsi que des outils d'IA et de data science (Python, Rasa, PyTorch, Pandas).",
+    "description1": "Ingénieur en informatique, spécialisé en génie logiciel à l'EPI Digital School, je suis passionné par le développement applicatif et les technologies de l'intelligence artificielle. Mon parcours m'a permis d'acquérir une solide maîtrise des environnements full stack (Angular, Spring Boot, React, Node.js) ainsi que des outils d'IA et de data science (Python, RAG, LLM, PyTorch, Pandas), et de la couverture qualité par des tests automatisés (Cucumber, Selenium, Appium).",
     "description2": "Curieux, rigoureux et créatif, j'aime relever des défis techniques et travailler sur des projets innovants mêlant développement web, mobile et intelligence artificielle. Mon objectif est de concevoir des solutions performantes et utiles, tout en continuant à évoluer dans un environnement stimulant et collaboratif."
   },
   "sections": {
@@ -32,6 +32,12 @@
     "internships": "Stages"
   },
   "education": {
+    "epi3": {
+      "school": "École pluridisciplinaire internationale d'Ingénierie de Sousse",
+      "degree": "3ème Année – Cycle Ingénieur",
+      "period": "2025 – 2026",
+      "specialty": "Génie Logiciel"
+    },
     "epi2": {
       "school": "École pluridisciplinaire internationale d'Ingénierie de Sousse",
       "degree": "2ème Année – Cycle Ingénieur",
@@ -67,6 +73,10 @@
     "title": "Mes Projets",
     "subtitle": "Découvrez mes réalisations et expériences de développement",
     "items": {
+      "telecare": {
+        "title": "EITA TeleCare – Plateforme de Télémédecine Intelligente",
+        "description": "Plateforme de télémédecine intelligente intégrant un chatbot IA clinique basé sur le RAG (Ollama, Qdrant), un module d’OCR médical (Tesseract), une architecture microservices Spring Boot (Eureka, API Gateway, Keycloak/JWT, PostgreSQL, Redis, Kafka), des interfaces multi-canal (React, Flutter) avec visioconférence WebRTC et messagerie temps réel WebSocket/STOMP, ainsi que des tests automatisés (Cucumber, Selenium, Appium)."
+      },
       "workwave": {
         "title": "Plateforme WorkWave",
         "description": "Plateforme web pour freelances et entreprises (matching, gestion de projets, profils)."
@@ -128,5 +138,31 @@
     "backendDesc": "Création d'API REST sécurisées et d'architectures microservices.",
     "aiDev": "Intelligence Artificielle & Data",
     "aiDesc": "Développement de solutions intelligentes et analyse de données."
+  },
+  "internships": {
+    "pfe": {
+      "company": "EITA INNOV",
+      "period": "02/2026 – 06/2026",
+      "role": "Stagiaire PFE – Full Stack & IA",
+      "description": "Conception et développement d’une plateforme de télémédecine intelligente (EITA TeleCare) intégrant un chatbot IA clinique basé sur le RAG (Ollama, Qdrant) pour accompagner patients et professionnels, ainsi qu’un module d’OCR médical (Tesseract) pour extraire le texte des PDF et images cliniques et enrichir le dossier médical. Mise en place d’une architecture microservices Spring Boot (Eureka, API Gateway) avec API REST sécurisée (Keycloak / JWT), bases PostgreSQL dédiées, cache et verrous Redis, et communication asynchrone via Apache Kafka. Développement d’interfaces multi-canal : application web (React, Tailwind, i18n), back-office admin (React / Vite) et application mobile patient (Flutter), avec visioconférence WebRTC et messagerie temps réel WebSocket / STOMP. Couverture qualité assurée par des tests unitaires et tests automatisés (Cucumber, Selenium, Appium)."
+    },
+    "satoripop2025": {
+      "company": "Satoripop, Sousse",
+      "period": "07/2025 – 08/2025",
+      "role": "Stagiaire Full Stack – IA & E-commerce",
+      "description": "Conception et développement d’une plateforme e-commerce intelligente intégrant un chatbot IA multilingue gérant le workflow complet du site et un système d’essayage virtuel (VITON-HD, OpenPose, PyTorch). Mise en place d’une architecture microservices (Spring Boot, Flask, Angular) avec API REST sécurisée (JWT), gestion du catalogue produits, panier, commandes et paiements (PayPal, Stripe, Orange Money). Développement d’une interface moderne et responsive (Angular 17, TypeScript, SCSS)."
+    },
+    "satoripop2024": {
+      "company": "Satoripop, Sousse",
+      "period": "07/2024 – 08/2024",
+      "role": "Stagiaire Full Stack – Urgences Médicales",
+      "description": "Développement d’une application web full-stack pour la gestion des services d’urgence médicale, incluant la coordination des appels, le suivi des missions et la gestion du personnel médical. Architecture microservices avec Spring Boot, JHipster et Angular. Intégration de Google Maps pour la géolocalisation et sécurisation des accès via JWT. Développement d’une interface multi-langues responsive et mise en place de tests automatisés via Docker."
+    },
+    "avionav": {
+      "company": "Avionav, Sousse",
+      "period": "09/2023 – 09/2023",
+      "role": "Stagiaire Développeur Qt – Interface de vol",
+      "description": "Projet “SMART COCKPIT” : conception d’un système embarqué pour avions légers modernisant le poste de pilotage via un écran tactile centralisant vitesse, altitude et horizon artificiel. Développement de l’interface de vitesse en temps réel avec Qt/QML sur Raspberry Pi 4B, intégration de capteurs (BMP280) via Python (PyQt5/PySide)."
+    }
   }
 }

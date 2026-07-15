@@ -37,9 +37,11 @@ export class ProjectsComponent implements OnInit {
         { name: 'Redis', icon: 'fa-solid fa-bolt', color: '#dc382d' }
       ],
       github: '#',
-      categories: ['fullstack', 'ia', 'mobile'],
-      mediaType: 'image',
-      mediaUrl: 'assets/consultEase/consultEase-home.png',
+      demo: 'https://player.cloudinary.com/embed/?cloud_name=dvbk7jizy&public_id=demo-pfe-soutenance_1_mvqftc',
+      categories: ['fullstack', 'ia', 'mobile' ],
+      mediaType: 'video',
+      mediaUrl: 'https://player.cloudinary.com/embed/?cloud_name=dvbk7jizy&public_id=demo-pfe-soutenance_1_mvqftc',
+      
       translationKey: 'telecare'
     },
     {
